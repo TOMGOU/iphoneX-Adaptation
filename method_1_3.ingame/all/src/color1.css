@@ -1,0 +1,77 @@
+/*1.所有分隔线、未选中标签描边、个人中心描边*/
+.ig-border{border:1px solid --{color1}--;}
+.ig-border-top{border-top:1px solid --{color1}--;}
+.ig-border-left{border-left:1px solid --{color1}--;}
+.ig-border-bottom{border-bottom:1px solid --{color1}--;}
+.ig-border-right{border-right:1px solid --{color1}--;}
+.hairlines .ig-border{border-width: 0.5px;}
+.hairlines .ig-border-top{border-top-width: 0.5px;}
+.hairlines .ig-border-left{border-left-width: 0.5px;}
+.hairlines .ig-border-bottom{border-bottom-width: 0.5px;}
+.hairlines .ig-border-right{border-right-width: 0.5px;}
+.ig-tags-step3 .current .ig-border{ border:none;}
+
+/*2.标题、正文文字、标签文字 字颜色*/
+.ig-color-tit{color:--{color2}--;}
+
+/*3.副标题、二级（三级）导航未选中文字 字颜色*/
+.ig-color-subtit{color:--{color3}--;}
+
+/*4.主导航栏未选中文字 字颜色*/
+.ig-color-nav{color:--{color4}--;}
+
+/*5.主导航栏选中文字 字颜色*/
+.main-nav .current .ig-color-nav{color:--{color5}--;}
+.ig-tags-step3 .current .ig-color-tit{color:--{color5}--;}
+
+/*6.实心按钮文字色 字颜色*/
+.ig-color-btn{color: --{color6}--;}
+.circle::before{border:1px solid --{color6}--;}
+.mcircle_arrow{ background: --{color6}--;}
+
+/*7.未选中标签底色、分类背景色、说明背景色*/
+.ig-bg-tag{background: --{color7}--;}
+.ig-border-video{border-color: --{color7}--;}
+
+/*8.实心按钮底色*/
+.ig-bg-btn{background:--{color8}--; }
+/*l镂空按钮描边*/
+.ig-border-btn{border:1px solid --{color8}--;}
+.hairlines .ig-border-btn{border-width: 0.5px;}
+/*强调文字色*/
+.ig-color-strong{color:--{color8}--;}
+.ig-color-link a{color:--{color8}--;}
+
+/*9.主导航栏选择底色*/
+.ig-bg-tag.current,.ig-bg-splite:before,.ig-tags-step3 .current .ig-bg-tag,.circle .mcircle::before,.circle .mcircle_core,.ig-bg-strong{background:--{color9}--; }
+/*二级导航选择态下划线色*/
+.ig-border-tab:after{background:--{color9}--;}
+.ig-border-tab2:after{border-bottom-color:--{color9}--;}
+/*等级标签描边*/
+.ig-border-level{border:1px solid --{color9}--;}
+/*.hairlines .ig-border-level{border-width: 0.5px;}*/
+/*等级文字 字颜色*/
+.ig-color-level,.ig-tags-it1.current .ig-tags-text1,.ig-tags-it2.current .ig-tags-text2{color:--{color9}--;}
+.ig-title-slash{ border-left-color: --{color9}--;}
+
+.ig-bg-nav .current{background-color:--{color9-2}--;background-image:-webkit-linear-gradient(to right, --{color9-1}--, --{color9-2}-- );background-image:linear-gradient(to right, --{color9-1}--, --{color9-2}--);}
+
+/*10.主导航条底色*/
+.ig-bg-nav{background-color:--{color10-2}--;background-image:-webkit-linear-gradient(to right, --{color10-1}--, --{color10-2}--);background-image:linear-gradient(to right, --{color10-1}--, --{color10-2}--);}
+
+/*11.标题栏底色、个人中心条底色、二级导航底色*/
+.ig-bg-bg1,.ig-tags-it1,.circle, .mcircle::after{background: --{color11}--;}
+
+/*12.背景色、二级菜单选中底色、三级菜单底色*/
+.ig-bg-body,.ig-tags-it1.current,.ig-tags-step3,.ig-tags-step2{background: --{color12}--;}
+
+
+/*--------竖屏CSS---------*/
+@media screen and (orientation:portrait) {
+    /*8.镂空按钮描边*/
+    .index-data-operation .ig-bg-btn,.my-baseinfo-share.ig-bg-btn{border:1px solid --{color8}--;color:--{color8}--;}
+    /*特殊个人中心顶部2~7色的渐变*/
+    .ig-bg-nav .current{background-color:--{color9-2}--;background-image:-webkit-linear-gradient(to bottom, --{color9-1}--, --{color9-2}--);background-image:linear-gradient(to bottom, --{color9-1}--, --{color9-2}--);}
+    /*10.主导航条底色*/
+    .ig-bg-nav{background-color:--{color10-2}--;background-image:-webkit-linear-gradient(to bottom,  --{color10-1}--, --{color10-2}--);background-image:linear-gradient(to bottom,  --{color10-1}--, --{color10-2}--);}
+}

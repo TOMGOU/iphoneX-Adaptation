@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="gbk">
+    <meta name="robots" content="all" />
+    <meta name="author" content="Tencent-TGideas" />
+    <meta name="Copyright" content="Tencent" />
+    <!--#include  virtual="inc/meta.html"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--#include  virtual="inc/css.html"-->
+</head>
+<script>
+    if (/iP(hone|od|ad)/.test(navigator.userAgent)) {
+        var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/),
+            version = parseInt(v[1], 10);
+        if (version >= 8) {
+            document.documentElement.classList.add('hairlines')
+        }
+    }
+</script>
+<style>
+    .mocha-ingame-content-wrap {
+        height: 100%
+    }
+    
+    .pop_return p {
+        margin-top: .3rem;
+    }
+    
+    .nowrap {
+        white-space: nowrap;
+    }
+</style>
+
+<body>
+    <div class="mocha-ingame mocha-ingame-index mocha-ingame-skin1">
+        <!--#include virtual="inc/main-nav.html"-->
+        <div class="mocha-ingame-content-wrap">
+            <div class="mocha-ingame-index-wrap">
+                <!--{indexdata}-->
+                <!--首页样式a-->
+                <div class="mocha-ingame-media">
+                    <div class="mocha-ingame-media-l">
+                        <div id="slider1" data-psdw="788" data-sliderw="788" data-sliderh="290" class="mocha-slider mocha-slider-scheme1 mocha-slider-skin1">
+                            <ul class="content">
+                                <li>
+                                    <a href='#' data-TGAD='16106,20893' ontouchend="PTTSendClick('btn','lbt1','轮播图1');"></a>
+                                </li>
+                                <li>
+                                    <a href='#' data-TGAD='16106,20905' ontouchend="PTTSendClick('btn','lbt2','轮播图2');"></a>
+                                </li>
+                                <li>
+                                    <a href='#' data-TGAD='16106,20906' ontouchend="PTTSendClick('btn','lbt3','轮播图3');"></a>
+                                </li>
+                                <li>
+                                    <a href='#' data-TGAD='16106,20944' ontouchend="PTTSendClick('btn','lbt3','轮播图3');"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class='fun-list'>
+                            <li id='home_daily'>
+                                <a href="javascript:;" class="sign" ontouchend="PTTSendClick('btn','home_daily','每日签到');">
+                                    <i class='spr_26'></i>每日签到</a>
+                                <em class="red_point"></em>
+                            </li>
+                            <li id='home_test'>
+                                <a href='//3.qq.com/cp/a20180510testm/index.html' ontouchend="PTTSendClick('btn','home_test','主公测试');">
+                                    <i class='spr_26'></i>主公测试</a>
+                            </li>
+                            <li id='home_calculator'>
+                                <a href='javascript:alert("敬请期待")' ontouchend="PTTSendClick('btn','home_calculator','耗材计算器');">
+                                    <i class='spr_26'></i>耗材计算器</a>
+                            </li>
+                        </ul>
+                        <div class='new-home-list'>
+                            <h4>最新资讯</h4>
+                            <a class='more' href="//3.qq.com/ingame/all/news.shtml" ontouchend="PTTSendClick('btn','more','更多');">更多+</a>
+                            <ul>
+                                <!--#include  virtual="/webplat/info/news_version3/32843/34657/34748/m20398/index.shtml"-->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mocha-ingame-media-ri">
+                        <div class='gongl'>
+                            <h3>武将攻略专区</h3>
+                            <a class='more' href="//3.qq.com/ingame/all/gl.shtml">更多+</a>
+                            <div class="gongl-list-box">
+                                <ul class='gongl-list'>
+                                </ul>
+                            </div>
+                            <div class='regongl'>
+                                <h3>热门攻略</h3>
+                                <a class='more' href="//3.qq.com/ingame/all/gl.shtml">更多+</a>
+                                <ul>
+                                    <!--#include  virtual="/webplat/info/news_version3/32843/34657/34659/m20384/index.shtml"-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id='pop_m' class="pop_m pop"></div>
+    <div id='pop_lb' class="pop_lb pop">
+        <h4>每日抽奖礼包</h4>
+        <a href="javascript:showDia('pop','pop_answer','pop_m');" class='more'>返回答题
+            <i></i>
+        </a>
+        <ul>
+            <li class='w_25'>15万木材</li>
+            <li class='w_25'>15万粮食</li>
+            <li class='w_25'>15万石料</li>
+            <li class='w_25'>15万铁矿</li>
+            <li class='w_33'>100金券</li>
+            <li class='w_33'>15分钟建筑加速</li>
+            <li class='w_33'>15分钟科技加速</li>
+            <li class='w_33'>高级迁城令</li>
+            <li class='w_33'>招募令</li>
+            <li class='w_33'>24小时免战令</li>
+        </ul>
+        <ol>
+            <li>每日答题正确的玩家将获得以上随机奖品中的一样。</li>
+            <li>签到活动奖励将以邮件形式直接发送到您的账户。</li>
+            <li>在法律允许的范围内，活动最终解释权归腾讯公司所有。</li>
+        </ol>
+    </div>
+    <div id='pop_answer' class="pop_answer pop">
+        <a href="javascript:showDiahide('pop','pop_m');" class='pop_back'>回到首页</a>
+        <h4>真龙小课程</h4>
+        <dl id="pop_answer_list">
+            <!-- <dt>Q:请问主公，以下哪个不是《真龙霸业》的游戏道具文字加长文字加长加长文字加长加长文字加长？</dt> -->
+            <!-- <dd class='on'>
+                <span></span>
+                <input type='radio' name='dj' />木材</dd>
+            <dd>
+                <span></span>
+                <input type='radio' name='dj' />粮食</dd>
+            <br>
+            <dd>
+                <span></span>
+                <input type='radio' name='dj' />银币</dd>
+            <dd>
+                <span></span>
+                <input type='radio' name='dj' />稻谷</dd> -->
+        </dl>
+        <!-- <p class='hint'>提示：回答正确，将会获得随机的礼品奖励噢！</p> -->
+        <a class='response' onclick="handIn()">交卷 签到</a>
+        <a href="javascript:showDia('pop','pop_lb','pop_m');" class='jp_list'>奖品列表</a>
+    </div>
+    <div class="pop_return pop" id='pop_return'>
+        <p>回答正确，奖励已经游戏邮件发放到你的账号，请留意。</p>
+        <a href="javascript:showDiahide('pop','pop_m');" class='response close'>关 闭</a>
+    </div>
+    <div class="pop_return pop" id='pop_return2'>
+        <p>回答错误，请重新答题!</p>
+        <a href="javascript:showDia('pop', 'pop_answer', 'pop_m');" class='response'>关 闭</a>
+    </div>
+    <div class="pop_return pop" id='pop_return3'>
+        <p class="nowrap">您已签到领取了奖励，请明天再来！</p>
+        <a href="javascript:showDiahide('pop', 'pop_m');" class='response'>关 闭</a>
+    </div>
+    <div class="pop_return pop" id='pop_return4'>
+        <p class="nowrap">请先选择一个答案！</p>
+        <a href="javascript:showDia('pop', 'pop_answer', 'pop_m');" class='response'>关 闭</a>
+    </div>
+    <script src="//ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+    <script src="src/common.js"></script>
+    <script src="//game.gtimg.cn/images/js/mocha/slider.min.js"></script>
+    <script src="//ossweb-img.qq.com/images/js/comm/tgadshow.min.js"></script>
+    <script type="text/javascript">
+        //Slider初始化
+        Slider.init(function(slider) {
+            //设置slider样式一
+            slider.type(1, [{
+                id: "slider1",
+                callback: function() {
+                    sliderObj.slider1.play();
+                    /*微官网slider.js hack start*/
+                    var w = $("#slider1").width();
+                    var len = $("#slider1").find('.content li').length;
+                    console.log(w);
+                    $("#slider1").find('.content li').css({
+                        width: w + 'px'
+                    });
+                    $("#slider1").find('.content').css({
+                        width: (len * w) + 'px'
+                    });
+                    $(window).resize(function(event) {
+                        var w = $("#slider1").width();
+                        console.log(w);
+                        $("#slider1").find('.content li').css({
+                            width: w + 'px'
+                        });
+                        $("#slider1").find('.content').css({
+                            width: (len * w) + 'px'
+                        });
+                        $("#slider1").find('.content').css('-webkit-transform',
+                            'translateX(-' + sliderObj['slider1'].curPage * w +
+                            'px)');
+                    });
+                    /*微官网slider.js hack end*/
+                }
+            }]);
+        });
+        // 首页切换内容导航
+        var header_li = document.querySelectorAll('.mocha-txt-list-header li');
+        var txt_list_ul = document.querySelectorAll('.mocha-txt-list-ul');
+        for (var i = 0; i < header_li.length; i++) {
+            header_li[i].index = i;
+            header_li[i].addEventListener('touchend', function() {
+                for (var i = 0; i < header_li.length; i++) {
+                    header_li[i].className = '';
+                    txt_list_ul[i].className = 'mocha-txt-list-ul';
+                }
+                this.className = 'on';
+                txt_list_ul[this.index].className += ' on'
+
+            })
+        }
+    </script>
+    <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+    <!-- <script src="//ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script> -->
+    <script src="//ossweb-img.qq.com/images/js/mobile_build/milo.js"></script>
+    <!-- <script src="//ossweb-img.qq.com/images/js/bsCommonFiles/js/amsUtils.js"></script> -->
+    <script src="//ossweb-img.qq.com/images/js/bsCommonFiles/js/amsUtils_v2.js"></script>
+    <!-- <script src="src/amsUtils.js"></script> -->
+    <script>
+        //此段代码不能放到外链JS中，不能是变量，DCV系统需要爬本页面内的代码以得到页面属性
+        var setSite = { //设置网站属性
+            siteType: "os", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+            pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+            pageName: "首页", //必填项:页面中文名
+            osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+            ingame: 1, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+            stayTime: 1 //选填项:是否需要统计停留时长boolean；默认是1
+        }
+        if (typeof(pgvMain) == 'function') pgvMain(); //千万不能忘记！
+
+        function getStyle(ele, name) {
+            if (ele.style.styleFloat) {
+                return ele.style.styleFloat; //ie下float处理
+            } else if (ele.style.cssFloat) {
+                return ele.style.cssFloat; //火狐等float处理
+            }
+            if (ele.currentStyle) {
+                return ele.currentStyle[name];
+            } else {
+                return getComputedStyle(ele, false)[name];
+            }
+        }
+        $(function() {
+            Sign()
+        })
+        if (location.search.indexOf("msdkEncodeParam=") < 0 && sessionStorage['dataSearch']) {
+            var tokenParam = sessionStorage['dataSearch'],
+                newUrl = location.search ? window.location.href + '&' + tokenParam.replace('?', '') + location.hash : window.location.href + tokenParam + location.hash;
+            window.history.replaceState(null, 'addLoginType', newUrl)
+        }
+
+        var search = location.search || sessionStorage.search;
+        var change = "";
+        var right = "";
+        var gift_id = "";
+        var signStatus = "";
+        //每日签到
+        function Sign() {
+            $.ajax({
+                type: 'GET',
+                url: '//app.ingame.qq.com/php/ingame/interestcenter/interestcenterinterface.php' + search,
+                dataType: 'jsonp',
+                data: {
+                    interfaceType: 61002,
+                    buss: 'zlby_daily_check_in',
+                    game: 'golden',
+                    num: 1,
+                    // sandbox: 1
+                },
+                success: function(data) {
+                    console.log(data, "每日签到")
+                    signStatus = data.status;
+                    if (signStatus == "SUCCESS") {
+                        $('.red_point').show();
+                    } else {
+                        $('.red_point').hide();
+                    }
+                    if (data.status == "SUCCESS") {
+                        $("#pop_answer_list").append('<dt>Q:' + data.data.questions[0].descr + '</dt>')
+                        data.data.questions[0].choices.forEach(function(item, index) {
+                            // console.log(Object.keys(item)[0])
+                            $("#pop_answer_list").append('<dd onclick="changeItem(' + index + ')"><span></span><input type="radio" name="dj"/>' + Object.values(item) + '</dd>')
+                        })
+                        getDd()
+                        right = data.data.questions[0].right
+                        gift_id = data.data.questions[0].id
+                    }
+                },
+                error: function(xhr, type) {
+                    // alert('Ajax error!')
+                }
+            })
+        }
+        var dataList = [];
+        var arrli = '';
+        $.ajax({
+            type: "get",
+            url: "//3.qq.com/zlkdatasys/data_zlk_wjlb.json?&" + Math.random(),
+            async: true,
+            dataType: "jsonp",
+            jsonp: "callback", //传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)
+            jsonpCallback: "herodetailcallback", //自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名，也可以写"?"，jQuery会自动为你处理数据
+            success: function(data) {
+                dataList = data.wjlbsj_18;
+                console.log(dataList)
+                for (var i = 0; i < dataList.length; i++) {
+                    var wjname = dataList[i].wjmc_1f;
+                    var wjlx = dataList[i].wjlx_28;
+                    var wjnum = dataList[i].wjid_2e;
+                    var wjimg = dataList[i].wjlbxtsq_70;
+                    var html = '<li class="glbg" data-lx="' + wjlx + '"><a href="gl_details.shtml?id=' +
+                        wjnum + '"><img  src="' + wjimg + '"/>' + wjname + '</a></li>';
+                    arrli += html;
+                }
+                setTimeout(function() {
+                    document.querySelector('.gongl-list').innerHTML = arrli;
+                    var gongl_list = document.querySelector('.gongl-list');
+                    var gongl_list_li = document.querySelectorAll('.gongl-list li');
+                    var gongl_list_li_width = parseInt(getStyle(gongl_list_li[0], 'width'));
+                    gongl_list.style.width = (((gongl_list_li.length - 1) * gongl_list_li_width) +
+                        ((gongl_list_li.length) * 12)) / 100 + 'rem';
+
+                }, 100)
+
+            }
+        });
+
+        function changeItem(i) {
+            if (i == 0) {
+                change = 'A'
+            } else if (i == 1) {
+                change = 'B'
+            } else if (i == 2) {
+                change = 'C'
+            } else {
+                change = 'D'
+            }
+            console.log(change)
+        }
+
+        function handIn() {
+            if (change == right) {
+                amsUtils.getAward({
+                    cfgId: 455100, //
+                    amsId: 141968, //
+                    actId: 202389, //以上三个字段是ams活动号生成
+                    interfaceType: '61003', //后端条件cgi接口
+                    game: 'golden', // 游戏id，右后端指定
+                    id: gift_id,
+                    buss: 'zlby_daily_check_in',
+                    // sandbox: 1,
+                    success: function(data) { //兑换成功的回调
+                        showDia("pop", "pop_return", "pop_m")
+                        console.log(data, "积分兑换礼包领取成功")
+                    },
+                    fail: function(callbackObj) { //兑换失败的回调
+                        alert(callbackObj.sMsg) //回答错误
+                            // showDia("pop", "pop_return2", "pop_m")
+                    }
+                });
+            } else if (change == '') {
+                showDia("pop", "pop_return4", "pop_m")
+            } else {
+                showDia("pop", "pop_return2", "pop_m")
+            }
+            var arr = document.getElementById("pop_answer_list").children;
+            console.log(arr)
+        }
+        $('.close').click(function() {
+            myrefresh()
+        })
+        $('.sign').click(function() {
+            if (signStatus == "SUCCESS") {
+                showDia('pop', 'pop_answer', 'pop_m');
+            } else {
+                // alert("已领取过奖励")
+                showDia("pop", "pop_return3", "pop_m");
+            }
+        })
+
+        function myrefresh() {
+            window.location.reload();
+        }
+
+        function showDia(pop, id, more) { //pop为当前弹窗所有默认类名  id为需要弹窗元素ID more为弹窗遮层
+            var pop1 = document.querySelectorAll('.' + pop);
+            for (var i = 0; i < pop1.length; i++) {
+                pop1[i].style.display = 'none';
+            }
+            document.querySelector('#' + id).style.display = 'block';
+            document.querySelector('#' + more).style.display = 'block';
+        }
+
+        function showDiahide(pop, more) {
+            var pop1 = document.querySelectorAll('.' + pop);
+            for (var i = 0; i < pop1.length; i++) {
+                pop1[i].style.display = 'none';
+            }
+            document.querySelector('#' + more).style.display = 'none';
+        }
+
+        function getDd() {
+            var pop_answer_dd = document.querySelectorAll('.pop_answer dd');
+            for (var i = 0; i < pop_answer_dd.length; i++) {
+                pop_answer_dd[i].addEventListener('touchend', function() {
+                    for (var i = 0; i < pop_answer_dd.length; i++) {
+                        pop_answer_dd[i].className = '';
+                    }
+                    this.className = 'on';
+                    this.getElementsByTagName('input')[0].checked = true;
+                })
+            }
+        }
+        setTimeout(function() {
+            for (var i = 0; i < document.querySelectorAll('.new-home-list li').length; i++) {
+                document.querySelectorAll('.new-home-list li a')[i].index = i;
+                document.querySelectorAll('.new-home-list li a')[i].addEventListener('touchstart', function() {
+                    PTTSendClick('btn', 'new' + this.index, '新闻' + this.index);
+                })
+            }
+            for (var i = 0; i < document.querySelectorAll('.gongl-list-box li').length; i++) {
+                document.querySelectorAll('.gongl-list-box li a')[i].index = i;
+                document.querySelectorAll('.gongl-list-box li a')[i].addEventListener('touchstart', function() {
+                    PTTSendClick('btn', 'gongllist' + this.index, '武将列表' + this.index);
+                })
+            }
+        }, 1500)
+    </script>
+</body>
+
+</html>

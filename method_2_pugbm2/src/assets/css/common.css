@@ -1,0 +1,36 @@
+.menu {position: absolute;z-index: 3;top: 0;bottom: 0;left: 0;width: 1.88rem;background: url(//game.gtimg.cn/images/pubgm/ingame/web201712/v2/bg-menu.png) no-repeat right top;background-size: 2.57rem;}
+a, button, div, input {-webkit-tap-highlight-color: transparent;}
+* {margin: 0;padding: 0;}
+body, html {font-size: .2rem;height: 100%;overflow: hidden;}
+body {font-family: HelveticaNeue-Light,'Helvetica Neue Light',Clockopia;background: #060c12;-webkit-text-size-adjust: none;}
+/* .act-main-wrap {height: 100%;background: url(//game.gtimg.cn/images/pubgm/ingame/web201712/v2/bgv2.jpg) no-repeat;background-size: cover; overflow: auto;} */
+.act-main-wrap {height: 100%;background: url(//game.gtimg.cn/images/pubgm/ingame/web201712/v2/bgv2.jpg) no-repeat;background-size: cover;overflow: hidden;}
+/* .sbounce {-webkit-overflow-scrolling: touch; overflow-scrolling: touch;} */
+
+/*menu*/
+.menu-list {height: 100%;margin-right: .3rem;text-align: center;}
+ol, ul {list-style: none;}
+.menu-list li {-webkit-box-sizing: border-box;box-sizing: border-box;height: .82rem;margin-bottom: .05rem;background: url(../img/bg-menu-item.png) no-repeat right 100%;background-size: 2.27rem;}
+.menu-list li.current {position: relative;background-position: right 0;}
+.menu-list li a {display: table;-webkit-box-sizing: border-box;box-sizing: border-box;width: 100%;height: 100%;text-align: right;text-decoration: none;}
+.menu-list li .cell {position: relative;display: table-cell;vertical-align: middle;}
+.menu-list .iconr {display: inline-block;margin-right: .05rem;vertical-align: middle;background-position-x: .03rem;}
+.iconr {width: .44rem;height: .44rem;}
+.menu-list li h6 {font-size: .24rem;font-weight: 400;line-height: .28rem;display: inline-block;margin-right: .3rem;vertical-align: middle;color: #fff;}
+.menu-list li.current h6 {color: #582b0b;}
+.iconr {background-image: url(../img/icon.png);background-size: .8rem;background-repeat: no-repeat;}
+.iconr-m-index{background-position-y: .05rem;}
+.iconr-m-guess{background-position-y: -1.46rem;}
+.iconr-m-video{background-position-y: -.44rem;}
+.iconr-m-more{background-position-y: -.98rem;}
+.current .iconr{background-position-x: -.42rem;}
+
+
+@media all and (orientation: portrait) {
+  .menu{width:100%;height: 1.2rem;top: auto;}     
+  .menu-list{width: 100%;}
+  .menu-list li{float: left;width: 1.87rem;height: 1.2rem;background-size: 4.27rem;background: #000;}
+  .menu-list li a{text-align: center;}
+  .menu-list li.current{background: url(//game.gtimg.cn/images/pubgm/ingameact/a20180321matchcenterwsq/index_nav_choose.png) no-repeat right 100%;background-size: 1.87rem  1.2rem;margin-bottom:0;}
+}
+

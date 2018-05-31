@@ -1,0 +1,64 @@
+/*1.所有分隔线、未选中标签描边、个人中心描边*/
+.ig-border{border:1px solid --{color1}--!important;}
+.ig-border-right {border-right: 1px solid --{color1}--;}
+.ig-border-left{border-left:1px solid --{color1}--!important;}
+.ig-border-top{border-top:1px solid --{color1}--;}
+.ig-border-bottom{border-bottom:1px solid --{color1}--!important;}
+.mocha-ingame .mocha-tab-scheme2.mocha-tab-skin1 .mocha-tab-triggers-ul .current,.mocha-ingame .mocha-tab-scheme2 .mocha-tab-triggers-ul li{border-right: 1px solid --{color1}--;}
+.mocha-tab-scheme2 .mocha-tab-triggers-ul li,.mocha-ingame-tab2 .mocha-ingame-tab-fixed .mocha-tab-scheme2 li{border-bottom: 1px solid --{color1}--;}
+/*2.标题、正文文字、标签文字 字颜色*/
+.ig-color-tit{color:--{color2}--!important;}
+/*3.副标题、二级（三级）导航未选中文字 字颜色*/
+.ig-color-subtit{color:--{color3}--!important;}
+.mocha-ingame-skin1 .mocha-txt-list .mocha-tlu-item-hot{color: --{color4}--;background-color: --{color10-2}--;}
+/*4.主导航栏未选中文字 字颜色*/
+.mocha-menu-scheme3 li a,.mocha-menu-scheme3 .mocha-menu-icon{color: --{color4}--;background-color: transparent;}
+/*5.主导航栏选中文字 字颜色*/
+.mocha-menu-scheme3 li.current a,.mocha-menu-scheme3 li.current .mocha-menu-icon{color: --{color5}--;}
+.mocha-tab-skin1.mocha-tab-scheme4 .mocha-tab-triggers-ul .current{color:--{color5}--;}
+/* 轮播导航未选中颜色 */
+.mocha-slider-scheme1.mocha-slider-skin1 .controller li{border:1px solid #958ba1; background-color: transparent;}
+/* 轮播导航选中颜色 */
+.mocha-slider-scheme1.mocha-slider-skin1 .controller li.current{background-color:#958ba1;}
+/*强调文字色*/
+.ig-color-strong{color:--{color8}--!important;}
+.mocha-ingame-detail a{color:--{color8}--;}
+/*6.实心按钮文字色 字颜色*/
+.ig-color-btn{color: --{color6}--;}
+.circle::before{border:1px solid --{color6}--;}
+.mcircle_arrow{ background: --{color6}--;}
+/*7.未选中标签底色、分类背景色、说明背景色*/
+.ig-bg-tag{background: --{color7}--!important;}
+.ig-border-video{display: block;border: 1px solid --{color7}--;}
+/*8.实心按钮底色*/
+.ig-bg-btn{color: --{color6}--;background: --{color8}--!important;}
+/*l镂空按钮描边*/
+.ig-border-btn{border:1px solid --{color8}--!important;}
+/*9.主导航栏选择底色*/
+.mocha-menu-scheme3 li.current{background-color:--{color9}--;background-image:-webkit-linear-gradient(to right, #328bb9, --{color9}-- );background-image:linear-gradient(to right, #328bb9, --{color9}--);}
+.mocha-tab-skin1.mocha-tab-scheme4 .mocha-tab-triggers-ul .current,.ig-bg-splite:before{background:--{color9}--!important;border: none!important;}
+.ig-bg-tag.current, .ig-bg-splite:before, .ig-tags-step3 .current .ig-bg-tag, .circle .mcircle::before, .circle .mcircle_core, .ig-bg-strong {background: --{color9}--;}
+/*二级导航选择态下划线色*/
+.mocha-tab-skin1.mocha-tab-scheme2 .mocha-tab-triggers-ul .current{border-bottom: 2px solid --{color9}--;}
+/*等级标签描边*/
+.ig-border-level{border:1px solid --{color9}--;}
+/*等级文字 字颜色*/
+.ig-color-level{color: --{color9}--!important;background-color: transparent!important;}
+.mocha-tab-skin1.mocha-tab-scheme2 .mocha-tab-triggers-ul .current,.mocha-tab-scheme3 .mocha-tab-triggers-ul .current{color:--{color9}--;}
+.mocha-ingame-content-wrap .mocha-title-skin3 .mocha-title-txt{border-left: 3px solid --{color9}--;}
+.mocha-tab-skin1.mocha-tab-scheme3 .mocha-tab-triggers-ul li.current::after{border-color: transparent transparent --{color9}-- transparent;}
+/*10.主导航条底色*/
+.mocha-menu-skin1{background-color:--{color10-2}--;background-image:-webkit-linear-gradient(to right, --{color10-1}--, --{color10-2}--);background-image:linear-gradient(to right, --{color10-1}--, --{color10-2}--);}
+/*11.标题栏底色、个人中心条底色、二级导航底色*/
+.mocha-tab-skin1 .mocha-tab-triggers,.mocha-ingame-skin1.mocha-ingame-tab2 .mocha-ingame-tab-fixed{background: --{color11}--;}
+.ig-bg-bg1,.ig-tags-it1,.circle, .mcircle::after{background: --{color11}--;}
+/*12.背景色、二级菜单选中底色、三级菜单底色*/
+body,.mocha-tab-skin1.mocha-tab-scheme3, .mocha-tab-skin1.mocha-tab-scheme4,.mocha-ingame .mocha-tab-scheme2.mocha-tab-skin1 .mocha-tab-triggers-ul .current,.ig-bg-body{background: --{color12}--;}
+
+@media screen and (orientation: landscape) {
+	.mocha-ingame-tab2 .mocha-tab-scheme2.mocha-tab-skin1 .mocha-tab-triggers-ul .current{border-right: 2px solid --{color9}--;}
+	.mocha-ingame-tab2 .mocha-tab-skin1.mocha-tab-scheme2 .mocha-tab-triggers-ul .current{border-bottom:1px solid --{color1}--;}
+}
+@media screen and (orientation: portrait) {
+	.mocha-data-user-skin1 .mocha-data-user-btn a{border: 1px solid --{color8}--;color: --{color8}--;background: --{color6}--!important;}
+}

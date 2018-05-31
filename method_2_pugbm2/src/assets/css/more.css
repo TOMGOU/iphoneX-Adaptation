@@ -1,0 +1,346 @@
+div#PCont {position: absolute;width: 11.18rem;min-height: 6.14rem;left: 1.88rem;top: .3rem;overflow: hidden;}
+a{text-decoration:none; color:#fff;}
+.more_box{
+	height: 6.14rem;
+	background: url(//game.gtimg.cn/images/pubgm/ingameact/a20180321matchcenterwsq/video_boxbg.png) no-repeat;
+	background-size: 100% 100%;
+	font-size: 0.25rem;
+	color: #fff;
+	/*border: 0.01rem solid #666;*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	margin-bottom: 1rem;
+	/*overflow: scroll;*/
+}
+.more_choosebox{
+	display: none;
+}
+/*nav*/
+.nav{color: #9f9c97;font-size: .26rem; height: .7rem;width: 100%;border-bottom: 0.01rem solid rgba(211,211,211,0.2);}
+.nav li{
+	width: 1.22rem;
+	height: .7rem;
+	float: left;
+	line-height: .7rem;
+	text-align: center;
+	background-image: url(//game.gtimg.cn/images/pubgm/ingameact/a20180321matchcenterwsq/nav_border.png);
+	background-position: right top;
+	background-size: .01rem .69rem;
+	border-right: 0.01rem solid rgba(211,211,211,0.2);
+
+}
+.nav li.active{color: #fff;background-image: url(//game.gtimg.cn/images/pubgm/ingameact/a20180321matchcenterwsq/nav_sel_bg.png);background-size: 100%;background-position: center;}
+.left_nav{
+	width: 2.18rem;
+	height: 100%;
+	left: 0;
+	/*margin-top: 1rem;*/
+	border-right: 0.01rem solid rgba(169,169,169,0.5);
+}
+.left_nav_top{
+	height: 0.39rem;
+	width: 100%;
+	border-bottom: 0.01rem solid rgba(211,211,211,0.2);
+}
+.left_nav .introduce{
+	width: 2.18rem;
+  height: 0.9rem;
+	border-bottom: 0.01rem solid rgba(211,211,211,0.2);
+	text-align: center;
+	line-height:0.9rem;
+}
+.left_nav .introduce a,.left_nav .introduce2 a,.match_data a,.nav a{font-size: .22rem;color: #9f9c97;}
+.left_nav .select_match a,.active a{color: #fff;font-weight: bold;}
+.left_nav .introduce2{
+	width: 2.18rem;
+  height: 0.9rem;
+	border-bottom: 0.01rem solid rgba(211,211,211,0.2);
+	text-align: center;
+	line-height:0.9rem;
+}
+.match_top{
+	margin-top: 0.21rem !important;
+}
+.match_data{
+	/*margin-top: 0.5rem;*/
+	width: 1.54rem;
+	height: 0.54rem;
+	background:url();
+	text-align: center;
+	line-height: 0.54rem;
+	border: 0.01rem solid rgba(211,211,211,0.2);
+	display: block;
+	margin:0 auto;
+	margin-bottom: 0.12rem;
+
+}
+.match_data p{
+	width: 1.54rem;
+	height: 0.54rem;
+	background:url();
+	text-align: center;
+	line-height: 0.54rem;
+	border: 0.01rem solid rgba(211,211,211,0.2);
+	display: block;
+	margin:0 auto;
+	margin-bottom: 0.12rem;
+}
+.more_team{
+	position: absolute;
+	width: 9rem;
+	height: 5.2rem;
+	left: 2.18rem;
+	top: 0.7rem;
+	display:none;
+	overflow: scroll;
+	overflow-x:hidden;
+	-webkit-overflow-scrolling: touch;
+	/*border: 0.01rem solid red;*/
+}
+.team_logo_list{
+	height: 1.1rem;
+	border-bottom: 0.01rem solid rgba(211,211,211,0.2); 
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+.team_logo{
+	width: 1.19rem;
+	height: 0.58rem;
+	margin-left:0.52rem;
+	margin-top: 0.29rem;
+	float: left;
+	/*border: 0.01rem solid red;*/
+}
+.index_schedule1{
+	float: left;
+	margin:0.05rem 0.13rem auto 0.58rem;
+	height: 0.24rem;
+	width: 0.08rem;
+}
+.info_tip1{
+	margin-top: 0.15rem;
+}
+.team_summary,.worker_summary{
+	border-bottom: 0.01rem solid rgba(211,211,211,0.2); 
+}
+.team_contant{
+	width: 8.6rem;
+	word-wrap: break-word;
+	/*border: 0.01rem solid red;*/
+	margin-bottom: 0.12rem;
+	position:relative;
+	margin-bottom: 0.1rem;
+}
+.team_title{
+	margin-left: 2.4rem;
+	margin-top: 0.1rem;
+	font-size: 0.3rem;
+	font-weight: 600;
+}
+.team_title2 {
+	margin-left: 2.4rem;
+	margin-top: 0.1rem;
+	font-size: 0.3rem;
+	font-weight: 600;
+}
+
+.team_text{
+	margin-left: 2.4rem;
+	font-size: 0.24rem;
+	margin-top: 0.06rem;
+	margin-bottom: 0.2rem;
+}
+.worker{
+	width: 0.81rem;
+	height: 0.82rem;
+	margin-left:0.77rem;
+	margin-top: 0.23rem;
+	float: left;
+}
+.like_box{
+	right: 0;
+	position: absolute;
+	top: 0.09rem;
+	font-size: 0.18rem;
+}
+.like{
+	width: 0.24rem;
+	height: 0.19rem;
+}
+.select_match{
+	background: url(//game.gtimg.cn/images/pubgm/ingameact/a20180321matchcenterwsq/more_threechoose.png) no-repeat;
+	background-size:100% 100%;
+}
+
+/*官方赛DIV*/
+.office_top{
+	margin-top: 0.5rem;
+	width: 100%;
+	/*border: 0.01rem solid red;*/
+	height: 1rem;
+}
+.office_team_logo{
+	width: 1.54rem;
+	height: 0.77rem;
+	margin-left:0.52rem;
+	margin-top: 0.1rem;
+	float: left;
+}
+.office_right{
+	float: left;
+	/*border: 0.01rem solid red;*/
+	margin-left: 0.55rem;
+}
+.office_title{
+	font-size: 0.43rem;
+	color: #ff9f00;
+	margin-top: 0;
+}
+.jiangjin{
+	font-size: 0.21rem;
+}
+.office_box{
+	width: 7.97rem;
+	margin-left: 0.52rem;
+	word-wrap: break-word;
+	margin-top: 0.2rem;
+	margin-bottom: 0.25rem;
+}
+@media all and (orientation: portrait) {
+	div#PCont {width: 100%; height:100%;left: 0;top: 0;overflow: visible}
+   .more_box{
+   		width: 100%;
+   		height: 100%;
+   		font-size: 0.25rem;
+   		color:#FFFFFF;
+   		overflow: visible;
+
+   } 
+	.nav li{
+		width: 20%;
+		height: .7rem;
+		float: left;
+		line-height: .7rem;
+		text-align: center;
+		/* background-image: url(../image/nav_border.png); */
+		background-position: right top;
+		background-size: .01rem .69rem;
+		border-right: 0.01rem solid rgba(211,211,211,0.2);
+		box-sizing: border-box;
+	}
+	.left_nav{
+		width: 20%;
+		height: 100%;
+		left: 0;
+		border-right: 0.01rem solid rgba(169,169,169,0.5);
+	}
+	.left_nav .introduce{
+		width: 100%;
+		height: 0.9rem;
+		border-bottom: 0.01rem solid rgba(211,211,211,0.2);
+		text-align: center;
+		line-height:0.9rem;
+	}
+	.left_nav .introduce2{
+		width: 100%;
+		height: 0.9rem;
+		border-bottom: 0.01rem solid rgba(211,211,211,0.2);
+		text-align: center;
+		line-height:0.9rem;
+	}
+	.match_data{
+		width: 1.24rem;
+		height: 0.54rem;
+		background:url();
+		text-align: center;
+		line-height: 0.54rem;
+		border: 0.01rem solid rgba(211,211,211,0.2);
+		display: block;
+		margin:0 auto;
+		margin-bottom: 0.12rem;
+
+	}
+	.more_team{
+		position: absolute;
+    	width: 78%;
+    	height: 100%;
+    	left: 20%;
+    	overflow: visible;
+	}
+	.office_top{
+		margin-top: 0.2rem;
+	}
+	.office_box {
+	    width: auto;
+	    word-wrap: break-word;
+	    margin:0.2rem auto 0.25rem 0.2rem;
+	}
+	.team_logo_list ul{
+		height: 1.1rem;
+	    border-bottom: 0.01rem solid rgba(211,211,211,0.2);
+	   width: 9rem;
+	}
+	.team_logo_list {
+	    height: 1.1rem;
+	    border-bottom: 0.01rem solid rgba(211,211,211,0.2);
+	    width: 6rem;
+	    overflow-x: scroll;
+	    -webkit-overflow-scrolling: touch;
+	}
+	.team_logo_list::-webkit-scrollbar {display:none}
+	.team_contant {
+	    width: 100%;
+	    word-wrap: break-word;
+	    /* border: 0.01rem solid red; */
+	    margin-bottom: 0.12rem;
+	    position: relative;
+	    margin-bottom: 0.1rem;
+	}
+	.office_team_logo,.index_schedule1{
+		margin-left: 0.32rem;
+	}
+	.like_box {
+	    left: 1.8rem;
+	    position: absolute;
+	    top: 0.44rem;
+	    font-size: 0.18rem;
+	    width: 1.5rem;
+	}
+	.team_title {
+	    margin-left: 2.2rem;
+	    margin-top: 0.1rem;
+	    font-size: 0.25rem;
+	    font-weight: 600;
+	}
+	.team_title2 {
+	    margin-left: 1.8rem;
+	    margin-top: 0.1rem;
+	    font-size: 0.25rem;
+	    font-weight: 600;
+	}
+	.team_text{
+	    margin-left: 1.8rem;
+	    font-size: 0.2rem;
+	    margin-top: 0.46rem;
+	    margin-bottom: 0.2rem;
+	}
+	.team_text2{
+		margin-top: 0.2rem;
+		margin-left: 2.2rem;
+	}
+	.worker {
+	    width: 1rem;
+	    height: 1rem;
+	    margin-left: 0.32rem;
+	    margin-top: 0.23rem;
+	    float: left;
+	}
+
+}
+
+
+
+
+

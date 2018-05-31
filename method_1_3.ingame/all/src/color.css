@@ -1,0 +1,61 @@
+/*1.所有分隔线、未选中标签描边、个人中心描边*/
+
+.ig-border{border:1px solid #bad4e2!important;}
+.ig-border-right {border-right: 1px solid #bad4e2;}
+.ig-border-left{border-left:1px solid #bad4e2!important;}
+.ig-border-top{border-top:1px solid #bad4e2;}
+.ig-border-bottom{border-bottom:1px solid #1a1e2b!important;}
+.mocha-ingame .mocha-tab-scheme2.mocha-tab-skin1 .mocha-tab-triggers-ul .current,.mocha-ingame .mocha-tab-scheme2 .mocha-tab-triggers-ul li{border-right: 1px solid #091525;}
+.mocha-tab-scheme2 .mocha-tab-triggers-ul li,.mocha-ingame-tab2 .mocha-ingame-tab-fixed .mocha-tab-scheme2 li{border:none;}
+/*2.标题、正文文字、标签文字 字颜色*/
+.ig-color-tit{color:#d0d7e3!important;}
+/*3.副标题、二级（三级）导航未选中文字 字颜色*/
+.ig-color-subtit{color:#fff!important;}
+.mocha-ingame-skin1 .mocha-txt-list .mocha-tlu-item-hot{color: #d7e5f0;background-color: #4e6b8a;}
+/*4.主导航栏未选中文字 字颜色*/
+.mocha-menu-scheme3 li a,.mocha-menu-scheme3 .mocha-menu-icon{color: #d7e5f0;background-color: transparent;}
+/*5.主导航栏选中文字 字颜色*/
+.mocha-menu-scheme3 li.current a,.mocha-menu-scheme3 li.current .mocha-menu-icon{color: #f1f7fe;}
+.mocha-tab-skin1.mocha-tab-scheme4 .mocha-tab-triggers-ul .current{color:#f1f7fe;}
+/*强调文字色*/
+.ig-color-strong{color:#d0d7e3!important;}
+.mocha-ingame-detail a{color:#f1712b;}
+/*6.实心按钮文字色 字颜色*/
+.ig-color-btn{color: #f1f9fb;}
+.circle::before{border:1px solid #f1f9fb;}
+.mcircle_arrow{ background: #f1f9fb;}
+/*7.未选中标签底色、分类背景色、说明背景色*/
+.ig-bg-tag{background: #add0e2!important;}
+.ig-border-video{display: block;border: 1px solid #add0e2;}
+/*8.实心按钮底色*/
+.ig-bg-btn{color: #f1f9fb;background: #f1712b!important;}
+/*l镂空按钮描边*/
+.ig-border-btn{border:1px solid #d0d7e3!important;}
+/*9.主导航栏选择底色*/
+.mocha-menu-scheme3 li.current{background-color:#402c13;background-image:-webkit-linear-gradient(to right, #402c13, #bd8632 );background-image:linear-gradient(to right, #402c13, #bd8632);border-right:2px solid #fff0c0;}
+.mocha-tab-skin1.mocha-tab-scheme4 .mocha-tab-triggers-ul .current,.ig-bg-splite:before{background:#53aace!important;border: none!important;}
+.ig-bg-tag.current, .ig-bg-splite:before, .ig-tags-step3 .current .ig-bg-tag, .circle .mcircle::before, .circle .mcircle_core, .ig-bg-strong {background: #53aace;}
+/*二级导航选择态下划线色*/
+.mocha-tab-skin1.mocha-tab-scheme2 .mocha-tab-triggers-ul .current{border-bottom:1px solid #53aace;}
+/*等级标签描边*/
+.ig-border-level{border:1px solid #53aace;}
+/*等级文字 字颜色*/
+.ig-color-level{color: #53aace!important;background-color: transparent!important;}
+.mocha-tab-skin1.mocha-tab-scheme2 .mocha-tab-triggers-ul .current,.mocha-tab-scheme3 .mocha-tab-triggers-ul .current{color:#fff;}
+.mocha-ingame-content-wrap .mocha-title-skin3 .mocha-title-txt{border-left: 3px solid #53aace;}
+.mocha-tab-skin1.mocha-tab-scheme3 .mocha-tab-triggers-ul li.current::after{border-color: transparent transparent #53aace transparent;}
+/*10.主导航条底色*/
+.mocha-menu-skin1{background-color:#161f2e;}
+/*11.标题栏底色、个人中心条底色、二级导航底色*/
+.mocha-tab-skin1 .mocha-tab-triggers,.mocha-ingame-skin1.mocha-ingame-tab2 .mocha-ingame-tab-fixed{background: #223148;}
+.ig-bg-bg1,.ig-tags-it1,.circle, .mcircle::after{background: #c9e3f0;}
+/*12.背景色、二级菜单选中底色、三级菜单底色*/
+/* body,.mocha-tab-skin1.mocha-tab-scheme3, .mocha-tab-skin1.mocha-tab-scheme4,.mocha-ingame .mocha-tab-scheme2.mocha-tab-skin1 .mocha-tab-triggers-ul .current,.ig-bg-body{background: #f1f9fb;} */
+body{background:#0b0f18!important;}
+@media screen and (orientation: landscape) {
+	.mocha-ingame-tab2 .mocha-tab-scheme2.mocha-tab-skin1 .mocha-tab-triggers-ul .current{border-right: 2px solid #53aace;}
+	.mocha-ingame-tab2 .mocha-tab-skin1.mocha-tab-scheme2 .mocha-tab-triggers-ul .current{border-bottom:1px solid #bad4e2;}
+}
+@media screen and (orientation: portrait) {
+	.mocha-data-user-skin1 .mocha-data-user-btn a{border: 1px solid #f1712b;color: #f1712b;background: #f1f9fb!important;}
+}

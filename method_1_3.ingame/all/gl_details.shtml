@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="gbk">
+  <meta name="robots" content="all" />
+  <meta name="author" content="Tencent-TGideas" />
+  <meta name="Copyright" content="Tencent" />
+  <!--#include  virtual="inc/meta.html"-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+  <!--#include  virtual="inc/css.html"-->
+</head>
+<script>
+  /*if (/iP(hone|od|ad)/.test(navigator.userAgent)) {
+          var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/),
+                  version = parseInt(v[1], 10);
+          if(version >= 8){
+              document.documentElement.classList.add('hairlines')
+          }
+      }*/
+</script>
+<style>
+  .mocha-ingame-index-wrap,
+  .mocha-ingame-content-wrap {
+    height: 100%;
+    overflow: hidden;
+  }
+</style>
+
+<body class='overflow_h'>
+  <div class="mocha-ingame mocha-ingame-strategy mocha-ingame-tab1 mocha-ingame-skin1">
+    <!--#include virtual="inc/main-nav.html"-->
+    <div class="mocha-ingame-content-wrap">
+      <div class="mocha-ingame-index-wrap">
+        <div class='hero_img'>
+          <p class='spr_26' id='img_name'>
+            <strong class='spr_26'></strong>
+            <span>刘备</span>
+          </p>
+          <i id='sj'></i>
+          <img src="" alt="">
+          <div id='img_data'>
+            <b class='spr_26'></b>
+          </div>
+        </div>
+        <div class='hero_detail'>
+          <h4 id='name'></h4>
+          <p id='nametxt'></p>
+          <dl id='tjzs'>
+            <dt>推荐指数</dt>
+            <!-- <dd class='spr_26'></dd> -->
+          </dl>
+          <dl id='hqnd'>
+            <dt>获取难度</dt>
+            <!-- <dd class='spr_26'></dd> -->
+          </dl>
+          <dl>
+            <dt class='min'>武将定位</dt>
+            <dd id='wjdw' class='text'></dd>
+          </dl>
+          <div>
+            <h5>相关攻略</h5>
+            <ul id='gl_list_u'>
+              <!-- <li><a href="javascript:;">
+               <h6>刘备+吕布到底有多猛</h6>
+               <span>攻略详细内容描述文字</span>
+              </a>
+               <b></b>
+             </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="loadingBox" class="loadingBoxdn" style="display: none;">
+        <img width="25" height="25" src="//ossweb-img.qq.com/images/feiji/website/loading.gif" alt="" />
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="//ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+  <script src="src/common.js"></script>
+  <script src="src/sliding.js"></script>
+  <script src="//ossweb-img.qq.com/images/js/comm/pagecount.min.js"></script>
+  <script src="//ossweb-img.qq.com/images/js/motion/slide.min.js"></script>
+  <script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+  <script>
+    Zepto(window).on("load", function () {
+      var tabFixedH = $('.mocha-ingame-tab-fixed').height();
+      $('.mocha-ingame-content-wrap').css('marginTop', tabFixedH);
+    })
+    //此段代码不能放到外链JS中，不能是变量，DCV系统需要爬本页面内的代码以得到页面属性
+    var setSite = { //设置网站属性
+      siteType: "os", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+      pageType: "gl", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+      pageName: "攻略列表", //必填项:页面中文名
+      osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+      ingame: 1, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+      stayTime: 1 //选填项:是否需要统计停留时长boolean；默认是1
+    }
+    if (typeof (pgvMain) == 'function') pgvMain(); //千万不能忘记！
+    function getUrlParam(url, parm) {
+      var reg = new RegExp("(^|&)" + parm + "=([^&]*)(&|$)");
+      var r = url.substr(url.indexOf("\?") + 1).match(reg);
+      if (r != null) return unescape(r[2]);
+      return null;
+    }
+    var detailID = getUrlParam(location.href, "id");
+    $.ajax({
+      type: "get",
+      url: "//3.qq.com/zlkdatasys/" + detailID + ".json?" + Math.random(),
+      async: true,
+      dataType: "jsonp",
+      jsonp: "callback", //传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)
+      jsonpCallback: "herodetailcallback", //自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名，也可以写"?"，jQuery会自动为你处理数据
+      success: function (data) {
+        var listnum = data.wjzxitagid_68;
+        var classN = null;
+        document.querySelector('#img_name span').innerHTML = data.wjmc_1f;
+        document.querySelector('#name').innerHTML = data.wjmc_1f;
+        document.querySelector('#nametxt').innerHTML = data.bjgs_f9;
+        document.querySelector('#wjdw').innerHTML = data.xttd_79;
+        document.querySelector('#sj').className = data.sfssj_e7;
+        document.querySelector('.hero_img img').src = data.wjdtsq_cd;
+        if (data.wjlx_28 == '骑将') {
+          classN = 'qj'
+        } else if (data.wjlx_28 == '步将') {
+          classN = 'bj'
+        } else if (data.wjlx_28 == '弓将') {
+          classN = 'gj'
+        } else if (data.wjlx_28 == '车将') {
+          classN = 'cj'
+        }
+        var dd = '';
+        var hqnds = parseInt(data.wjhqnd_df) == data.wjhqnd_df;
+        var tjzss = parseInt(data.wjtjzs_ca) == data.wjtjzs_ca;
+        if (tjzss) {
+          for (var i = 0; i < data.wjtjzs_ca; i++) {
+            dd += "<dd class='spr_26'></dd>";
+          }
+          document.querySelector('#hqnd').innerHTML = '<dt>推荐指数</dt>' + dd;
+        } else {
+          for (var i = 0; i < data.wjtjzs_ca - 1; i++) {
+            dd += "<dd class='spr_26'></dd>";
+          }
+          document.querySelector('#hqnd').innerHTML = '<dt>推荐指数</dt>' + dd + '<dd class="bgxx spr_26"></dd>';
+        }
+        dd = '';
+        if (hqnds) {
+          for (var i = 0; i < data.wjhqnd_df; i++) {
+            dd += "<dd class='spr_26'></dd>";
+          }
+          document.querySelector('#tjzs').innerHTML = '<dt>获取难度</dt>' + dd;
+        } else {
+          for (var i = 0; i < data.wjhqnd_df - 1; i++) {
+            dd += "<dd class='spr_26'></dd>";
+          }
+          document.querySelector('#tjzs').innerHTML = '<dt>获取难度</dt>' + dd + '<dd class="bgxx spr_26"></dd>';;
+        }
+        document.querySelector('#img_data').innerHTML = '<b class="spr_26 ' + classN + '">' + data.wjlx_28 +
+          '</b>' + data.wjlx_28 + '&nbsp;&nbsp;' + data.wjdwlx_a6;
+        document.querySelector('#img_name strong').className = classN + ' spr_26';
+        // if(listnum!=null){
+        $.ajax({
+          url: '//apps.game.qq.com/wmp/v3.1/?p0=85&p1=searchNewsKeywordsList&source=client_circle_detail&r0=script&r1=NewsObj&type=iTag&id=' +
+            listnum,
+          type: 'GET',
+          dataType: 'script',
+          success: function () {
+            console.log(NewsObj)
+            if (NewsObj.msg.result) {
+              var li = '';
+              for (var i = 0; i < NewsObj.msg.result.length; i++) {
+                var title = NewsObj.msg.result[i].sTitle;
+                var url = NewsObj.msg.result[i].sUrl;
+                var desc = NewsObj.msg.result[i].sDesc;
+                var urlid = NewsObj.msg.result[i].iNewsId;
+                li += '<li><a href="gl-img-detail.shtml?id=' + urlid + '"><h6>' + title + '</h6><span>' +
+                  desc + '</span></a><b></b></li>'
+              }
+              document.querySelector('#gl_list_u').innerHTML = li;
+              document.querySelector('#gl_list_u').className = '';
+            } else {
+              document.querySelector('#gl_list_u').innerHTML = '<li class="gl-no-data">暂无攻略</li>';
+              document.querySelector('#gl_list_u').className = 'text_a';
+            }
+          }
+        });
+      },
+      error: function (data) {
+        window.location.href = '//3.qq.com/ingame/all/gl.shtml';
+      }
+    })
+  </script>
+</body>
+
+</html>

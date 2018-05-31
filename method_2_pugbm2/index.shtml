@@ -1,0 +1,116 @@
+<!doctype html><html style=font-size:50px><head><meta charset=utf-8><meta name=author content=Tencent-TGideas><meta name=Copyright content=Tencent><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name=Description content="《绝地求生 全军出击》官方正版绝地求生手游。全军测试，火爆来袭！天美出击，原味吃鸡！"><meta name=robots content=none><meta name=format-detection content="telephone=no"><link rel=dns-prefetch href=//apps.game.qq.com/ ><link rel=dns-prefetch href=//ossweb-img.qq.com/ ><style>body,html{
+            position: fixed;
+            height: 100%;
+            width: 100%;
+        }
+    @supports (bottom:constant(safe-area-inset-bottom)) or (bottom:env(safe-area-inset-bottom)) {
+        /* html,body{
+            right: constant(safe-area-inset-right);
+            right: env(safe-area-inset-right);
+            left: constant(safe-area-inset-right);
+            left: env(safe-area-inset-right);
+            bottom: constant(safe-area-inset-bottom);
+            bottom: env(safe-area-inset-bottom);
+        }*/
+        .comment-add-bar {
+            /* bottom: constant(safe-area-inset-bottom);
+            bottom: env(safe-area-inset-bottom); */
+            /* left: 2.86rem!important; */
+            left: calc(1.76rem + env(safe-area-inset-right))!important;
+            /* right: 0.6rem!important; */
+            right: calc(.7*env(safe-area-inset-right))!important;
+        } 
+        .menu{
+            width: calc(1.88rem + env(safe-area-inset-right))!important;
+            text-align: right!important;
+        }
+        #g-index div#PCont,#g-video div#PCont,#g-more div#PCont{
+            left: calc(1.88rem + env(safe-area-inset-right))!important;
+        }
+        .content-wrap{
+            margin-left: calc(1.76rem + env(safe-area-inset-right))!important;
+            margin-right: calc(.7*env(safe-area-inset-right))!important;
+        }
+        #g-index .right_box{
+            width: calc(4.85rem - 1.5*env(safe-area-inset-right))!important; 
+        }
+        #g-index .right_box_bottom{
+            width: calc(4.45rem - 1.5*env(safe-area-inset-right))!important; 
+        }
+        #g-index .info_box{
+            width: calc(4.48rem - 1.5*env(safe-area-inset-right))!important; 
+        }
+        #g-video .video_box,#g-matchInfo .matchInfo_box{
+            width: calc(11.19rem - 1.5*env(safe-area-inset-right))!important; 
+        }
+        #g-matchInfo div#PCont{
+            left: calc(1.88rem + 1.5*env(safe-area-inset-right))!important;
+        }
+        #g-video .match_video{
+            width: calc(10rem - 1.5*env(safe-area-inset-right))!important; 
+        }
+        #g-more div#PCont{
+            width: calc(11.19rem - 1.5*env(safe-area-inset-right))!important; 
+        }
+        #g-more .office_box{
+            width: calc(7.97rem - 1.5*env(safe-area-inset-right) )!important;
+        }
+        #g-more .team_contant{
+            width: calc(8.6rem - 1.5*env(safe-area-inset-right))!important;
+        }
+        #g-matchInfo .info_box_left{
+            width: calc(7.4rem - 1.5*env(safe-area-inset-right))!important;
+        }
+    }</style><title>绝地求生 全军出击微社区</title><link href=./bin/css/main.0cba08c.css rel=stylesheet></head><script>// (function(){
+    //    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    //    var ratio = window.devicePixelRatio || 1;
+    //    var screen = {
+    //        width : window.screen.width * ratio,
+    //        height : window.screen.height * ratio
+    //    };
+    //    if (iOS && screen.width == 1125 && screen.height === 2436) {
+    //        (function (win,doc){
+    //             if (!win.addEventListener) return;
+    //             var html=document.documentElement;
+    //             function setFont(cb) {
+    //                 var w = html.clientWidth,
+    //                     h = html.clientHeight;
+    //                 html.style.fontSize= w > h ? w/1490*100+"px" : w/750*100+"px";
+    //                 if(cb&&typeof (cb)=="function"){cb()}
+    //             }
+    //             setFont();
+    //             doc.addEventListener('DOMContentLoaded',setFont,false);
+    //             win.addEventListener('resize',setFont,false);
+    //             win.addEventListener('load',setFont,false);
+    //         })(window,document);
+    //    }else{
+    //        (function (win,doc){
+    //            if (!win.addEventListener) return;
+    //            var html=document.documentElement;
+    //            function setFont(cb) {
+    //                var w = html.clientWidth,
+    //                    h = html.clientHeight;
+    //                html.style.fontSize= w > h ? w/1320*100+"px" : w/750*100+"px";
+    //                if(cb&&typeof (cb)=="function"){cb()}
+    //            }
+    //            setFont();
+    //            doc.addEventListener('DOMContentLoaded',setFont,false);
+    //            win.addEventListener('resize',setFont,false);
+    //            win.addEventListener('load',setFont,false);
+    //        })(window,document);
+    //    }
+    // })();
+    (function (win,doc){
+        if (!win.addEventListener) return;
+        var html=document.documentElement;
+        function setFont(cb) {
+            var w = html.clientWidth,
+                h = html.clientHeight;
+            html.style.fontSize= w > h ? w/1320*100+"px" : w/750*100+"px";
+            if(cb&&typeof (cb)=="function"){cb()}
+        }
+        setFont();
+        doc.addEventListener('DOMContentLoaded',setFont,false);
+        win.addEventListener('resize',setFont,false);
+        win.addEventListener('load',setFont,false);
+    })(window,document);</script><body style="font-size: 12px"><div class=act-main-wrap id=app><div class=menu><ul class="sbounce menu-list"><router-link :to="{name: 'index'}" tag=li active-class=current id=m_index><a title=赛事 class=a-tgax ontouchend="pttReport('menu','index','导航菜单-赛事')"><div class=cell><span class="iconr iconr-m-index"></span><h6>赛事</h6></div></a></router-link><router-link :to="{name: 'video'}" tag=li active-class=current id=m_video><a title=视频 class=a-tgax ontouchend="pttReport('menu','gl','导航菜单-视频')"><div class=cell><span class="iconr iconr-m-video"></span><h6>视频</h6></div></a></router-link><router-link :to="{name: 'more'}" tag=li active-class=current id=m_more><a title=更多 class=a-tgax ontouchend="pttReport('menu','weapon','导航菜单-更多')"><div class=cell><span class="iconr iconr-m-more"></span><h6>更多</h6></div></a></router-link><li><a><div><h6>宽：{{width}}</h6></div></a></li><li><a><div><h6>高：{{height}}</h6></div></a></li></ul></div><router-view></router-view></div><div class=smtips></div><div class=pjaxloading id=loading style="display: none;"><div class=spinner><div class=bounce1></div><div class=bounce2></div><div class=bounce3></div></div></div><div id=autots style="display: none;"></div><script src="//ossweb-img.qq.com/c/=/images/js/zepto/zepto.min.js,/images/js/bsCommonFiles/js/inobounce_v2.min.js,/images/js/PTT/ping_tcss_tgideas_https_min.js"></script><script src=//ossweb-img.qq.com/images/js/mobile_bundle/milo.js></script> <% if(process.env.NODE_ENV === 'production') { %> <script crossorigin src=//ossweb-img.qq.com/images/js/bsCommonFiles/js/new_cdn/vue.2.5.16.min.js></script><script crossorigin src=//ossweb-img.qq.com/images/js/bsCommonFiles/js/new_cdn/vue-router.2.8.1.min.js></script><script crossorigin src=//ossweb-img.qq.com/images/js/bsCommonFiles/js/new_cdn/axios.0.18.0.min.js></script> <% } %> <script type=text/javascript src=./bin/js/manifest.d41d8.js></script><script type=text/javascript src=./bin/js/vendor.39e97.js></script><script type=text/javascript src=./bin/js/main.2eb93.js></script></body></html>

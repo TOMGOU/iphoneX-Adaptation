@@ -1,0 +1,399 @@
+div#PCont {position: absolute;width: 11.18rem;height: 6.14rem;left: 1.88rem;top: .3rem;overflow: hidden; }
+*{padding: 0; margin:0;}
+a{text-decoration:none; color:#fff;}
+.event_center{
+	height: 6.14rem;
+	width: 13.34rem;
+	font-size: 0.25rem;
+	/*background: url(//game.gtimg.cn/images/pubgm/ingameact/a20180321matchcenterwsq/bg.png) no-repeat  top;*/
+	background-size:100% 100%;
+	color:#FFFFFF;
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	/*border: 0.01rem solid red;*/
+}
+
+/*直播界面*/
+.center_box{
+	width:6.16rem;
+	height: 6.14rem;
+	float: left;
+	overflow: scroll;
+	overflow-x:hidden;
+	-webkit-overflow-scrolling: touch;
+	/*margin-left: 1.89rem;*/
+}
+.center_box::-webkit-scrollbar {display:none}
+.zhibo_box{
+	width:6.16rem;
+	height:5.19rem;
+	margin:0rem 0rem 0.19rem auto;
+	/*border: 0.01rem solid red;*/
+}
+.mod_player{
+	width: 100%;
+	height: 2.8rem;
+}
+.video_box{
+	width: 100%;
+	height: 3.46rem;
+	/*border: 0.01rem solid red;*/
+	/* background: url(//game.gtimg.cn/images/pubgm/ingameact/a20180321matchcenterwsq/index_video.png); */
+	position: relative;
+}
+.video_top{
+	width: 100%;
+	height: 0.61rem;
+	background: url(//game.gtimg.cn/images/pubgm/ingameact/a20180321matchcenterwsq/index_video_topbg.png) no-repeat;
+	background-size:100% 100%;
+	line-height: 0.61rem;
+}
+.zhibo_logo{
+	margin-left: 0.23rem;
+	margin-right: 0.09rem;
+	margin-top: 0.13rem;
+	float: left;
+	width: 0.98rem;
+	height: 0.34rem;
+}
+.video_play{
+	position: absolute;
+	left: 2.70rem;
+	top: 1.5rem;
+	width: 0.73rem;
+	height: 0.73rem;
+	z-index: 8;
+}
+.index_v_playing{
+	width: 100%;
+	height: 2.9rem;
+}
+.video_bottom{
+	height: 0.55rem;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background: url(//game.gtimg.cn/images/pubgm/ingameact/a20180321matchcenterwsq/video_v_bottom.png);
+}
+.video_full{
+	float: right;
+	margin-right: 0.15rem;
+	margin-top: 0.12rem;
+	width: 0.31rem;
+	height: 0.31rem;
+}
+/*直播赛事类型选项卡*/
+.nav_video{
+	width: 100%;
+	height: 0.72rem;
+	background: url(//game.gtimg.cn/images/pubgm/ingameact/a20180321matchcenterwsq/index_video_choosebg.png);
+	border-bottom: 0.01rem solid rgba(211,211,211,0.2);
+}
+.match_ul li{
+	height: 0.72rem;
+	width: 1.21rem;
+	float: left;
+	text-align: center;
+	list-style:none;
+	vertical-align:middle;
+	border-right: 0.01rem solid rgba(211,211,211,0.2);
+}
+.match_type{
+	font-size: 0.22rem;
+	margin-top: 0.13rem;
+	/*line-height: 0.72rem;*/
+}
+.status{
+	font-size: 0.1rem;
+	color: #ff9000;
+}
+/*报名入口*/
+.entry_box{
+	background: url(//game.gtimg.cn/images/pubgm/ingameact/a20180321matchcenterwsq/index_entry_bg.png); width: 100%;height: 100%;
+	height: 1rem;
+	border-bottom: 0.01rem solid rgba(211,211,211,0.6);
+}
+.entry_left{
+	width:100%;
+	height: 1rem;
+	line-height: 1rem;
+	margin-left: 1.58rem;
+}
+.entry_logo{
+	/*background: url(//game.gtimg.cn/images/pubgm/ingameact/a20180321matchcenterwsq/index_entry_bg.png); width: 100%;height: 100%;*/
+	float: left;
+	margin:0.25rem 0.1rem auto 0.3rem;
+	height: 0.51rem;
+	width: 0.51rem;
+}
+/*赛程图*/
+.shedule{
+	background: url(//game.gtimg.cn/images/pubgm/ingameact/a20180321matchcenterwsq/index_schedule3.png);
+	height: 1.21rem;
+	width: 100%;
+	/*border: 0.01rem solid red;*/
+}
+.shedule_top{
+	height: 0.33rem;
+	width: 1.03rem;
+	float: left;
+	margin: 0.16rem auto auto 0.25rem;
+}
+.index_more{
+	height: 0.3rem;
+	width: 0.68rem;
+	float: right;
+	margin: 0.16rem 0.2rem auto auto;
+}
+.index_schedule1{
+	float: left;
+	margin-right: 0.13rem;
+	margin-top: 0.05rem;
+	height: 0.24rem;
+	width: 0.08ren;
+}
+.schedule_text{
+	float: left;
+}
+.right_box{
+	width: 4.85rem;
+	float: left;
+	margin-left: 0.21rem;
+	/*border: 0.01rem solid red;*/
+}
+/*广告位*/
+.ad_top{
+	height: 1.47rem;
+	width: 100%;
+	background: url(//game.gtimg.cn/images/pubgm/ingameact/a20180321matchcenterwsq/ad_bg.png) no-repeat;
+	background-size:100% 100%;
+	/*margin-top: 0.29rem;*/
+}
+.ad_text1{
+	font-size: 0.3rem;
+	position: relative;
+	left: 0.24rem;
+	top: 0.35rem;
+}
+.ad_text2{
+	font-size: 0.22rem;
+	position: relative;
+	left: 0.24rem;
+	top: 0.34rem;
+}
+/*赛事快讯*/
+.right_box_bottom{
+	width: 4.45rem;
+	height: 4.20rem;
+	margin-top: 0.2rem;
+	padding: 0.19rem;
+	background: url(//game.gtimg.cn/images/pubgm/ingameact/a20180321matchcenterwsq/index_video_topbg.png) no-repeat;
+	background-size:100% 100%;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+	/*border: 0.01rem solid red;*/
+}
+.right_box_bottom::-webkit-scrollbar {display:none}
+.info_box{
+	width: 4.48rem;
+	height: 4.56rem;
+}
+.info_top{
+	width: 100%;
+	height: 0.28rem;
+}
+.info_tip1{
+	float: left;
+	width: 1.28rem;
+}
+.info_more{
+	float: right;
+	width: 0.68rem;
+}
+.info_contant{
+	width: 100%;
+	position: relative;
+	margin-top: 0.1rem;
+}
+.nav_info li{
+	list-style:none;
+	width: 100%;
+	height: 1.16rem;
+	/*border: 0.01rem solid red;*/
+	position: relative;
+}
+.info_img1{
+	width: 1.67rem;
+	height: 0.94rem;
+	background: url(//game.gtimg.cn/images/pubgm/ingameact/a20180321matchcenterwsq/index_fastNew1.png) no-repeat;
+	background-size:100% 100%;
+}
+.video_tip{
+	width:0.43rem;
+	height: 0.24rem;
+}
+.info_text{
+	position: absolute;
+	left: 1.77rem;
+	top: 0.08rem;
+}
+.liulang{
+	position: absolute;
+	bottom: 0.2rem;
+	left: 1.77rem;
+	font-size: 0.2rem;
+	
+}
+.liulang_logo{
+	width: 0.3rem;
+	height: 0.24rem;
+}
+.index_date{
+	position: absolute;
+	bottom: 0.2rem;;
+	right: 0;
+	font-size: 0.2rem;
+}
+.info_tip2{
+	width: 100%;
+	margin-bottom: 0.13rem;
+}
+.index_v_playing2{
+	width: 2.15rem;
+	height: 1.17rem;
+}
+
+.video_list_img1{
+	width: 2.15rem;
+	height: 1.17rem;
+	background: url(//game.gtimg.cn/images/pubgm/ingameact/a20180321matchcenterwsq/index_video1.png) no-repeat;
+	background-size:100% 100%;
+	float: left;
+	margin-right: 0.18rem;
+	position: relative;
+	margin-bottom: 0.2rem;
+}
+.video_list_img2{
+	width: 2.15rem;
+	height: 1.17rem;
+	background: url(//game.gtimg.cn/images/pubgm/ingameact/a20180321matchcenterwsq/index_video2.png) no-repeat;
+	background-size:100% 100%;
+	float: left;
+	position: relative;
+	/*border: 0.01rem solid red;*/
+	margin-bottom: 0.2rem;
+}
+.video_play2{
+	width: 0.54rem;
+	height: 0.54rem;
+	left: 0.84rem;
+	top: 0.34rem;
+	position: absolute;
+}
+.select_video{
+	background: url(//game.gtimg.cn/images/pubgm/ingameact/a20180321matchcenterwsq/video_choose.png) no-repeat;
+	background-size:100% 100%;
+}
+.match_ul a{color: #9f9c97;}
+.select_video a{color: #fff;font-weight: bold;}
+
+@media all and (orientation: portrait) {
+	div#PCont {width: 100%; height:100%;left: 0;top: 0;overflow: visible}
+   .event_center{
+   		width: 100%;
+   		height: 100%;
+   		font-size: 0.25rem;
+   		color:#FFFFFF;
+   		overflow: auto;
+   		overflow-x: hidden;
+   } 
+   .center_box{
+	width:100%;
+	height: 6.14rem;
+	/*margin-left: 1.89rem;*/
+    }
+   .zhibo_box{
+		width:100%;
+		height:5.19rem;
+		margin:0rem 0rem 0.19rem auto;
+	/*border: 0.01rem solid red;*/
+    }
+    .mod_player{
+    	height: 2.9rem;
+    }
+	.match_ul li{
+		height: 0.72rem;
+		width: 20%;
+		float: left;
+		text-align: center;
+		list-style:none;
+		vertical-align:middle;
+		border-right: 0.01rem solid rgba(211,211,211,0.2);
+		box-sizing: border-box;
+	}
+	.entry_left{
+		width:100%;
+		height: 1rem;
+		line-height: 1rem;
+		margin-left: 32%;
+	}
+	.right_box{
+		width: 100%;
+		margin-left: 0;
+	}
+	.right_box_bottom{
+		width: 100%;
+		height: 100%;
+		margin-top: 0;
+		padding: 0.19rem;
+		/* background: url(../image/index_video_topbg.png) no-repeat; */
+		background-size:100% 100%;
+		/*border: 0.01rem solid red;*/
+	}
+	.ad_top{
+		height: 2rem;
+		width: 100%;
+		background: url(//game.gtimg.cn/images/pubgm/ingameact/a20180321matchcenterwsq/ad_bg.png) no-repeat;
+		background-size:100% 100%;
+		/*margin-top: 0.29rem;*/
+	}
+	.info_box{
+		width: 100%;
+		height: 100%;
+	}
+	.info_more{
+		float: right;
+		width: 0.68rem;
+		margin-right: 0.15rem;
+	}
+	.nav_info{
+		margin-right: 0.3rem;
+		margin-top: 0.2rem;
+	} 
+	.nav_info li{
+		box-sizing: border-box;
+    	margin-bottom: 0.1rem;
+    	border-bottom: 0.01rem solid rgba(211,211,211,0.6);
+	}
+	.video_list_img1{
+		width: 40%;
+		height: 1.7rem;
+		margin-right: 10%;
+		margin-bottom: 1.5rem;
+	}
+	.video_list_img2{
+		width: 40%;
+		height: 1.7rem;
+		margin-bottom: 1.5rem;
+	}
+	.video_play2{
+		width: 0.54rem;
+		height: 0.54rem;
+		left: 1.2rem;
+		top: 0.64rem;
+		position: absolute;
+	}
+	
+}

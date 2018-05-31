@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iphoneX 适配</title>
+    <style>
+        #box{
+            width: 100px;
+            height: 100px;
+            background: red;
+            padding: 10px;
+        }
+        #box div{
+            width: 100%;
+            height: 100%;
+            background: yellow;
+        }
+        @supports (bottom:constant(safe-area-inset-bottom)) or (bottom:env(safe-area-inset-bottom)){
+            /* window.orientation == 0时候的样式 */
+            .zero{
+                background: red!important;
+            }
+            /* window.orientation == 90时候的样式 */
+            .ninety{
+                background: blue!important;
+            }
+            /* window.orientation == -90时候的样式 */
+            ._ninety{
+                background: green!important;
+            }
+            /* window.orientation == 180时候的样式 */
+            .reverse{
+                background: yellow!important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div></div>
+    </div>
+    <script>
+        var box = document.getElementById("box");
+        function orientationChange() {
+            switch(window.orientation) {
+                case 0: 
+                    box.setAttribute("class","zero")
+                    break;
+                case -90: 
+                    box.setAttribute("class","_ninety")
+                    break;
+                case 90:
+                    box.setAttribute("class","ninety")
+                    break;
+                case 180:
+                    box.setAttribute("class","reverse")
+                    break;
+            }
+        }
+        window.addEventListener('orientationchange', orientationChange);
+    </script>
+</body>
+</html>

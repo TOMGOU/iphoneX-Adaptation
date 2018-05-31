@@ -1,0 +1,14 @@
+/* screen-helper start */
+@mixin land {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin por {
+  @media (orientation: portrait) {
+    @content;
+  }
+}
+
+/* screen-helper end */

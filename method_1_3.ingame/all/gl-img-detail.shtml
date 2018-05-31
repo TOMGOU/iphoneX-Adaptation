@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="gbk">
+    <meta name="robots" content="all"/>
+    <meta name="author" content="Tencent-TGideas"/>
+    <meta name="Copyright" content="Tencent"/>
+    <!--#include  virtual="inc/meta.html"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!--#include  virtual="inc/css.html"-->
+    <title>（已开服）4月26日6:00-12:00停服更新公告 - 微官网</title>
+</head>
+<script>
+    if("" == 1){
+        window.location.href = '';
+    }
+    /*if (/iP(hone|od|ad)/.test(navigator.userAgent)) {
+        var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/),
+                version = parseInt(v[1], 10);
+        if(version >= 8){
+            document.documentElement.classList.add('hairlines')
+        }
+    }*/
+</script>
+<body>
+<div class="mocha-ingame mocha-ingame-skin1">
+    <!--#include virtual="inc/main-nav.html"-->
+    <div class="mocha-ingame-content-wrap" >
+         <div class="mocha-ingame-detail-wrap">
+            <div class="mocha-title ig-border-bottom">
+                <h3 class="mocha-title-txt ig-color-tit">漫画模板</h3>
+                <p class="ig-color-subtit">龙珠运营团队&nbsp;/&nbsp;2016-06-03 11:34:55</p>
+            </div>
+            <div class="mocha-ingame-detail ig-color-tit">
+               <img src="//game.gtimg.cn/images/3new/ingame/video-live.jpg" alt="">
+               <p>这是一个漫画模板</p>
+            </div>
+            <div class="mocha-ingame-detail-share">
+                <a id="shareDialogBtn" href="javascript:;" class="mocha-button mocha-button-scheme1 mocha-button-skin1 ig-border-btn ig-color-strong shareBtn"><i class="mocha-icon">&#xe604;</i>转发给朋友</a>
+            </div>
+            <div id="shareDialog" class="mocha-dialog mocha-dialog-scheme2 mocha-dialog-skin1 share-guide-task" style="display:none;">
+                <div class="mocha-dialog-mark"></div>
+                <div class="mocha-dialog-box">
+                    <div class="mocha-dialog-bd">
+                        <p>点击 “<i class="mocha-icon">&#xe604;</i>” 按钮分享出去哦~</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="//ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+<script src="src/common.js"></script>
+<script src="//game.gtimg.cn/images/sy/2016/miniweb/ingame/js/newsdetail.js"></script>
+<script src="//ossweb-img.qq.com/images/js/bsCommonFiles/msdkshare/msdkshare.js"></script>
+<script type="text/javascript">
+    $(function() {
+        var sharedata = {
+            title:"$sTitle.DATA$"
+            ,desc:"微官网"
+            ,url:location.href
+            ,img:"https://ossweb-img.qq.com/images/js/bsCommonFiles/images/gamelogo.jpg"
+        }
+        window.ingameShare = new igShare({
+            shareData:sharedata,
+            tcss:"ingame.share"
+        });
+    })
+</script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+    //此段代码不能放到外链JS中，不能是变量，DCV系统需要爬本页面内的代码以得到页面属性
+    var setSite={   //设置网站属性
+        siteType:"os",  //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType:"detail",   //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName:"详情页",  //必填项:页面中文名
+        osact:0,    //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+        ingame:1,   //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime:1  //选填项:是否需要统计停留时长boolean；默认是1
+    }
+    if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+<script src="//ossweb-img.qq.com/images/js/news/news_comon.js"></script></html>
+<script>
+function getUrlParam(url,parm) {
+var reg = new RegExp("(^|&)" + parm + "=([^&]*)(&|$)");
+var r = url.substr(url.indexOf("\?") + 1).match(reg);
+if (r != null) return unescape(r[2]);
+return null;
+}
+var detailID = getUrlParam(location.href,"id");
+$.ajax({
+  url: '//apps.game.qq.com/wmp/v3.1/public/searchNews.php?p0=85&source=client_circle_detail&id='+detailID,
+  type: 'GET',
+  dataType: 'script',
+  success: function() {
+   console.log(searchObj)
+
+    document.querySelector('.mocha-ingame-detail-wrap .mocha-title h3').innerHTML=searchObj.msg.sTitle;
+    document.querySelector('.ig-color-subtit').innerHTML='官方运营 / '+searchObj.msg.sIdxTime;
+    document.querySelector('.mocha-ingame-detail.ig-color-tit').innerHTML=searchObj.msg.sContent;
+
+   // if(NewsObj.msg){
+   //  // var li='';
+   //  // for(var i=0;i<NewsObj.msg.linkList.length;i++){
+   //  //  var title=NewsObj.msg.linkList[i].sTitle;
+   //  //  var url=NewsObj.msg.linkList[i].sUrl;
+   //  //  var desc=NewsObj.msg.linkList[i].sDesc;
+   //  //  var urlid=NewsObj.msg.linkList[i].iNewsId;
+   //  //  li+='<li><a href="gl-img-detail.shtml?id='+urlid+'"><h6>'+title+'</h6><span>'+desc+'</span></a><b></b></li>'
+   //  // }
+   //  document.querySelector('#gl_list_u').innerHTML=li;
+   //  document.querySelector('#gl_list_u').className='';
+   // }else{
+   //  document.querySelector('#gl_list_u').innerHTML='暂无攻略';
+   //  document.querySelector('#gl_list_u').className='text_a';
+   // }
+  }
+});
+</script>
+</html>
+<!--[if !IE]>|xGv00|f7f23307d2950d9efb1565bc6562189d<![endif]-->

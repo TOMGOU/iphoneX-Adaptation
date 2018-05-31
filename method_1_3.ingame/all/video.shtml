@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="gbk">
+    <meta name="robots" content="all"/>
+    <meta name="author" content="Tencent-TGideas"/>
+    <meta name="Copyright" content="Tencent"/>
+    <!--#include  virtual="inc/meta.html"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!--#include  virtual="inc/css.html"-->
+</head>
+<script>
+    if (/iP(hone|od|ad)/.test(navigator.userAgent)) {
+        var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/),
+                version = parseInt(v[1], 10);
+        if(version >= 8){
+            document.documentElement.classList.add('hairlines')
+        }
+    }
+</script>
+<style>
+ #mod_player{ position:fixed; width:100%; height:100%; left:0; top:0; background-color:rgba(0,0,0,.8); display:none; z-index:9998; }
+.p_close{ font-size:30px; width:40px; height:40px; text-align:center; line-height:50px; color:#ccc; position:fixed; top:0; right:0; margin-left:-20px; text-decoration:none; display:none; z-index:9999; }
+</style>
+<body>
+<div class="mocha-ingame mocha-ingame-video mocha-ingame-tab1 mocha-ingame-skin1">
+    <!--#include virtual="inc/main-nav.html"-->
+    <div class="mocha-ingame-tab-fixed">
+        <div class="mocha-tab mocha-tab-scheme2 mocha-tab-skin1">
+            <div class="mocha-tab-triggers">
+                <ul class="mocha-tab-triggers-ul ig-color-subtit">
+                    <!-- <li class="current" data-url="/webplat/info/news_version3/32843/34657/34670/m20145/list_1.shtml">最新</li> -->
+                    <li class='current' data-url="/webplat/info/news_version3/32843/34657/34670/34672/m20145/list_1.shtml">官方精品</li>
+                    <li data-url="/webplat/info/news_version3/32843/34657/34670/34673/m20145/list_1.shtml">攻略视频</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="mocha-ingame-content-wrap">
+		<div class="mocha-ingame-index-wrap">
+   <div class="mocha-txt-list mocha-pictxt-list-scheme1 mocha-pictxt-list-skin1 mocha-txt-list-skin1" data-url="/webplat/info/news_version3/32843/34657/34670/34672/m20145/list_1.shtml" id="menuNews_List1">
+    <ul class="mocha-txt-list-ul on">
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+    </ul>
+    <ul class="mocha-txt-list-ul">
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+    </ul>
+    <ul class="mocha-txt-list-ul">
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+      <li class="mocha-ptlu-item">
+         <a href="share-img-detail.shtml" class="mocha-ptlu-item-a ig-border-video" title="标题">
+             <img width="100%" src="http://shp.qpic.cn/qqvideo_ori/0/f0146v449oh_228_128/0" alt="" class="pic">
+             <div class="icon-play"><i class="mocha-icon">?a</i></div>
+             <div class="mocha-ptlu-item-info ig-bg-tag">
+                 <h4 class="ig-color-tit">图片标题显示在这里图片标题显示在这里</h4>
+                 <p class="mocha-ptlu-item-meta ig-color-subtit"><span>王者荣耀</span><span><i class="mocha-menu-icon icon ig-color-subtit">?b</i>2.3万</span></p>
+             </div>
+         </a>
+     </li>
+    </ul>
+			</div>
+			<div class="mocha-ingame-newsloading mocha-ingame-newsloading-tips"  id="load-text"><span>点击载入更多</span></div>
+			<div id="loadingBox" class="loadingBoxdn" style="display: none;">
+				<img width="25" height="25" src="//ossweb-img.qq.com/images/feiji/website/loading.gif" alt=""/>
+			</div>
+		</div>
+    </div>
+</div>
+<div id="mod_player"></div>
+<span class="p_close sp">x</span>
+ <script src="//ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+<script src="src/common.js"></script>
+<script src="src/sliding.js"></script>
+<script src="//ossweb-img.qq.com/images/js/comm/pagecount.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/motion/slide.min.js"></script>
+<script type="text/javascript">
+//开始调用
+window.onload = function () {
+	window.JSMscrollNews = new scrollNews({
+		contID:"menuNews_List1",
+		attribute:"data-url"//自定义的属性名
+	});
+	JSMscrollNews.WriteHtml();
+	$("#load-text").on(igTap,function(){JSMscrollNews.LoadNext()});
+	$(".mocha-tab-triggers li").on(igTap, function () {
+		$("#loadingBox").show();
+		$(".mocha-tab-triggers li").removeClass("current");
+		$(this).addClass("current");
+		if ($(this).attr("data-url")) {
+			$("#load-text").html("点击显示更多");
+			JSMscrollNews.LoadUrl($(this).attr("data-url"));
+			$("#loadingBox").hide();
+
+		}
+	})
+}
+</script>
+<script src="//imgcache.gtimg.cn/tencentvideo_v1/tvp/js/tvp.player_v2_zepto.js"></script>
+<script>
+var player;
+function initVideo(x){
+	var video = new tvp.VideoInfo();
+	video.setVid(x);
+	player =new tvp.Player();
+	var videoURL = '';
+	player.create({
+		video: video,
+		modId: 'mod_player',
+		width:"100%",
+		height:"100%",
+		onfullscreen:function(f){if(!f)$("#mod_player",".p_close").hide()},
+		autoplay:true,
+		isHtml5UseAirPlay:true,
+		isHtml5UseFakeFullScreen:true
+	});
+  $("#mod_player").show();
+	$('.p_close').show();
+};
+Zepto(function($){
+    $(".p_close").on("touchstart",function(event){
+        $(".p_close").hide()
+        $("#mod_player").hide();
+        event.preventDefault();
+        player.pause();
+    },false);
+});
+</script>
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+    //此段代码不能放到外链JS中，不能是变量，DCV系统需要爬本页面内的代码以得到页面属性
+    var setSite={   //设置网站属性
+        siteType:"os",  //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+        pageType:"video",   //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+        pageName:"视频列表",  //必填项:页面中文名
+        osact:0,    //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+        ingame:1,   //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+        stayTime:1  //选填项:是否需要统计停留时长boolean；默认是1
+    }
+    if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+  </body>
+  </html>
